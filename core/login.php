@@ -1,5 +1,5 @@
 <?php
-    if(!isset($_SESSION["ID"])) {
+    if(session_status() == PHP_SESSION_NONE) {
         session_start();
     }
     require("../settings/templates/header.php");
@@ -17,7 +17,7 @@
         if($chkpw == true) {
             $_SESSION["ID"] = $userexist[0]["id"];
             $_SESSION["firstname"] = $userexist[0]["firstname"];
-            //header("Location: ../index.php");
+            header("Location: ../index.php");
         }else {
             echo "Password invalid";
         }
