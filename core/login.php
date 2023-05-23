@@ -67,12 +67,12 @@
         
         <div class="checkbox mb-3">
             <label>
-            <input type="checkbox" value="remember-me" checked> Remember me
+            <input type="checkbox" value="remember-me" disabled> Remember me
             </label>
         </div>
         <button class="w-100 btn custommetelbutton" name="login_button" type="submit">Sign In</button>
         <div>
-            <p class="text-center">&copy;2023 <a href="register.php">Need an Account?</a></p>
+            <p class="text-center">&copy;2023 Metel+ <a href="register.php">Need an Account?</a></p>
         </div>
     </form>
 </main>  
