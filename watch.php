@@ -11,17 +11,25 @@
 <script src="https://kit.fontawesome.com/b7c91fdb59.js" crossorigin="anonymous"></script>
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php"><img src="./settings/webmedia/metelplus.png" height="40"></a>
-    <button class="navbar-toggler custommetelbutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#"><img src="./settings/webmedia/metelplus.png" height="40"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.php"><i class="fa-solid fa-house"></i> Home</a>
+                <a class="nav-link active" aria-current="page" href="index.php"><i class="fa-solid fa-house"></i> Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="search.php"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                    <?php echo $_SESSION["firstname"] ?>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="core/logout.php">Logout</a></li>
+                </ul>
             </li>
         </ul>
     </div>
