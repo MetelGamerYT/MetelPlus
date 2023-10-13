@@ -69,7 +69,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `password`) VALUES
-(1, 'Simon', 'Engelbracht', 'dermetelgameryt@gmail.com', '$2y$10$qV4MOoj5KRjf9fCOG5vZueFY.b1TXOuCMza7L/6RnOMEDRImo5d0u');
+(1, 'Horst', 'Baum', 'dermetelgameryt@gmail.com', '$2y$10$qV4MOoj5KRjf9fCOG5vZueFY.b1TXOuCMza7L/6RnOMEDRImo5d0u');
 
 --
 -- Indizes der exportierten Tabellen
